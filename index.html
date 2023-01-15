@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizzerija Marina</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">Početna</a>
+    <a href="#menu" class="w3-bar-item w3-button">Meni</a>
+    <a href="#about" class="w3-bar-item w3-button">O nama</a>
+    <a href="#kontakt" class="w3-bar-item w3-button">Kontakt</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:160px">Picerija<br>Marina</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Picerija<br>Marina</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Prikaži meni</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Meni</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s6 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s6 tablink w3-padding-large w3-hover-red">Paste</div>
+      </a>
+      
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margarita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">750 RSD</span></h1>
+      <p class="w3-text-grey">Svež paradajz, sveža mozzarella, svež bosiljak</p>
+      <hr>
+   
+      <h1><b>Formaggio</b> <span class="w3-tag w3-red w3-round">Novo!</span> <span class="w3-right w3-tag w3-dark-grey w3-round">950 RSD</span></h1>
+      <p class="w3-text-grey">Četiri vrste sira (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">800 RSD</span></h1>
+      <p class="w3-text-grey">Svež paradajz, mozzarella, piletina, luk</p>
+      <hr>
+
+      <h1><b>Capricciosa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">700 RSD</span></h1>
+      <p class="w3-text-grey">Šunka, kačkavalj, šampinjoni, origano, masline</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popularno</span> <span class="w3-right w3-tag w3-dark-grey w3-round">1000 RSD</span></h1>
+      <p class="w3-text-grey">Specialan sos, mozzarella, parmezan, mleveno meso</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">850 RSD</span></h1>
+      <p class="w3-text-grey">Ravioli punjeni sa sirom</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">950 RSD</span></h1>
+      <p class="w3-text-grey">Svež paradajz, luk, mleveno meso</p>
+      <hr>
+
+      <h1><b>Morska pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1350 RSD</span></h1>
+      <p class="w3-text-grey">Losos, škamp, jastog, beli luk</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">O nama</h1>
+    <p>Picerija Marina je mesto gde ćete pronaći autentične italijanske pice i druge specijalitete. Naši pekari su stručnjaci u svom poslu i za pripremu svake pice koriste samo najkvalitetnije sastojke. Nudimo različite vrste testa, od tradicionalnih do integralnih, i širok izbor filova za svakoga. Pored pica, nudimo i druge italijanske specijalitete kao što su testenine. Posetite nas i uživajte u ukusima italijanske kuhinje u našoj prijatnoj i opuštajućoj atmosferi. Dozvolite da vas obradujemo našim odličnim jelima i dobrim vinima. Picerija Marina, gde ćete uvek naći dobar razlog za slavlje!</p>
+    <p><strong>Pica majstor?</strong> Sam gospodin Italiano!<img src="images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Ceo svoj život je posvetio pravljenju Italijanskih delikatesa, svoju sreću je pronašao u pizzama i pastama koje svojim ukusom ukradu srca onima koji ih probaju</p>
+    <img src="images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Radno vreme</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Ponedeljak ----- 10.00 - 23.30</p>
+        <p>Utorak ----- 10.00 - 23.30</p>
+        <p>Sreda ----- 10.00 - 23.30</p>
+        <p>Četvrtak ----- 10:00 - 23:30</p>
+        <p>Petak ----- 10:00 - 02:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Subota ----- 10:00 - 22:00</p>
+        <p>Nedelja ----- Neradna</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-xlarge" id="kontakt">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Kontakt</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18895.45967757418!2d19.822533162205737!3d45.251293290064226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b103fb395f091%3A0x3989ed6b00824d67!2z0J_QuNGG0LXRgNC40ZjQsCDwn42V!5e0!3m2!1ssr!2srs!4v1673715716088!5m2!1ssr!2srs" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Nađite nas na našoj adresi ili nas pozovite na <b>060 123 4567</b></p>
+    <p><span class="w3-tag">Još nešto!</span> Nudimo kompletnu uslugu keteringa za sve događaje, velike ili male. Razumemo vaše potrebe i obezbedićemo hranu koja će zadovoljiti najveće kriterijume od svih, kako izgledom tako i ukusom.</p>
+    <p class="w3-xxlarge"><strong>Rezervišite</strong> sto, pitajte za današnji specijalitet ili nam samo pošaljite poruku:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Ime" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Koliko ljudi" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2023-01-14T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Poruka \ Specijalni zahtevi" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">POŠALJI PORUKU</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Marina Ilić - IT 108/18</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
